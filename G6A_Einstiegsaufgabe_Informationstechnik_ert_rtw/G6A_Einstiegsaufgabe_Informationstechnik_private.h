@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'G6A_Einstiegsaufgabe_Informationstechnik'.
  *
- * Model version                  : 1.14
+ * Model version                  : 1.18
  * Simulink Coder version         : 9.0 (R2018b) 24-May-2018
- * C/C++ source code generated on : Mon Nov  4 14:39:35 2019
+ * C/C++ source code generated on : Mon Nov 11 17:44:35 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -26,7 +26,6 @@
 void config_ADC_A(uint16_T maxconvReg , uint16_T adcChselSEQ1Reg, uint16_T
                   adcChselSEQ2Reg, uint16_T adcChselSEQ3Reg, uint16_T
                   adcChselSEQ4Reg);
-extern real_T rt_powd_snf(real_T u0, real_T u1);
 extern void G6A_Einstiegsa_NEGATIVEEdge(real_T rtu_Enable, boolean_T rtu_IN,
   boolean_T rtu_INprevious, rtB_NEGATIVEEdge_G6A_Einstiegsa *localB);
 extern void G6A_Einstiegsa_POSITIVEEdge(real_T rtu_Enable, boolean_T rtu_IN,

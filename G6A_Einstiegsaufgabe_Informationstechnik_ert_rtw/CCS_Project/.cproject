@@ -28,35 +28,35 @@
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.1515724014" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
 <listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\MSuP\MATLAB_Workspace\MSuP_Einstiegsaufgabe">
+<listOptionValue builtIn="false" value="C:/MSuP/MATLAB_Workspace/MSuP_Einstiegsaufgabe">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\MSuP\MATLAB_Workspace\MSuP_Einstiegsaufgabe\G6A_Einstiegsaufgabe_Informationstechnik_ert_rtw">
+<listOptionValue builtIn="false" value="C:/MSuP/MATLAB_Workspace/MSuP_Einstiegsaufgabe/G6A_Einstiegsaufgabe_Informationstechnik_ert_rtw">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\extern\include">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/extern/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\simulink\include">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/simulink/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\src">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\src\ext_mode\common">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/src/ext_mode/common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\ert">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/ert">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/tic2000/inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\toolbox\shared\can\src\scanutil">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/toolbox/shared/can/src/scanutil">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/tic2000/src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\toolbox\rtw\targets\common\can\blocks\tlc_c">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/toolbox/rtw/targets/common/can/blocks/tlc_c">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\externalmode_daemon\include">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/shared/externalmode_daemon/include">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1045084510" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
 <listOptionValue builtIn="false" value="MODEL=G6A_Einstiegsaufgabe_Informationstechnik">
 </listOptionValue>
-<listOptionValue builtIn="false" value="NUMST=2">
+<listOptionValue builtIn="false" value="NUMST=3">
 </listOptionValue>
 <listOptionValue builtIn="false" value="NCSTATES=0">
 </listOptionValue>
@@ -98,7 +98,7 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value=" -s -v28 -ml  --large_memory_model --silicon_version=28 --define=LARGE_MODEL -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --large_memory_model --silicon_version=28 --define=LARGE_MODEL -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1 -DF28335 -DBOOT_FROM_FLASH=1">
 </listOptionValue>
 </option>
 </tool>
@@ -122,6 +122,14 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE.1003708014" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="PWM_DMAACCESS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_USING_BL=0">
+</listOptionValue>
 <listOptionValue builtIn="false" value="F28335">
 </listOptionValue>
 <listOptionValue builtIn="false" value="PWM_DMAACCESS=0">
@@ -176,35 +184,35 @@
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.899964030" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
 <listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\MSuP\MATLAB_Workspace\MSuP_Einstiegsaufgabe">
+<listOptionValue builtIn="false" value="C:/MSuP/MATLAB_Workspace/MSuP_Einstiegsaufgabe">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\MSuP\MATLAB_Workspace\MSuP_Einstiegsaufgabe\G6A_Einstiegsaufgabe_Informationstechnik_ert_rtw">
+<listOptionValue builtIn="false" value="C:/MSuP/MATLAB_Workspace/MSuP_Einstiegsaufgabe/G6A_Einstiegsaufgabe_Informationstechnik_ert_rtw">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\extern\include">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/extern/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\simulink\include">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/simulink/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\src">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\src\ext_mode\common">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/src/ext_mode/common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\rtw\c\ert">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/rtw/c/ert">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/tic2000/inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\toolbox\shared\can\src\scanutil">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/toolbox/shared/can/src/scanutil">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/supportpackages/tic2000/src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2018b\toolbox\rtw\targets\common\can\blocks\tlc_c">
+<listOptionValue builtIn="false" value="C:/Program Files/MATLAB/R2018b/toolbox/rtw/targets/common/can/blocks/tlc_c">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\externalmode_daemon\include">
+<listOptionValue builtIn="false" value="C:/ProgramData/MATLAB/SupportPackages/R2018b/toolbox/target/shared/externalmode_daemon/include">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1616953459" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
 <listOptionValue builtIn="false" value="MODEL=G6A_Einstiegsaufgabe_Informationstechnik">
 </listOptionValue>
-<listOptionValue builtIn="false" value="NUMST=2">
+<listOptionValue builtIn="false" value="NUMST=3">
 </listOptionValue>
 <listOptionValue builtIn="false" value="NCSTATES=0">
 </listOptionValue>
@@ -246,7 +254,7 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value=" -s -v28 -ml  --large_memory_model --silicon_version=28 --define=LARGE_MODEL -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --large_memory_model --silicon_version=28 --define=LARGE_MODEL -v28 --float_support=fpu32 -ml -DF28335 -DBOOT_FROM_FLASH=1 -DF28335 -DBOOT_FROM_FLASH=1">
 </listOptionValue>
 </option>
 </tool>
@@ -270,6 +278,14 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE.1144595131" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="F28335">
+</listOptionValue>
+<listOptionValue builtIn="false" value="PWM_DMAACCESS=0">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
+</listOptionValue>
+<listOptionValue builtIn="false" value="BOOT_USING_BL=0">
+</listOptionValue>
 <listOptionValue builtIn="false" value="F28335">
 </listOptionValue>
 <listOptionValue builtIn="false" value="PWM_DMAACCESS=0">

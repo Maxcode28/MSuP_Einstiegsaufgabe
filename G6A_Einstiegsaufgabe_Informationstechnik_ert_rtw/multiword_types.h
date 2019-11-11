@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'G6A_Einstiegsaufgabe_Informationstechnik'.
  *
- * Model version                  : 1.14
+ * Model version                  : 1.18
  * Simulink Coder version         : 9.0 (R2018b) 24-May-2018
- * C/C++ source code generated on : Mon Nov  4 14:39:35 2019
+ * C/C++ source code generated on : Mon Nov 11 17:44:35 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000

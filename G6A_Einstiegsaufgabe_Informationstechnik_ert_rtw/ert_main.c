@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'G6A_Einstiegsaufgabe_Informationstechnik'.
  *
- * Model version                  : 1.14
+ * Model version                  : 1.18
  * Simulink Coder version         : 9.0 (R2018b) 24-May-2018
- * C/C++ source code generated on : Mon Nov  4 14:39:35 2019
+ * C/C++ source code generated on : Mon Nov 11 17:44:35 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -21,13 +21,14 @@
 #include "rtwtypes.h"
 
 volatile int IsrOverrun = 0;
-boolean_T isRateRunning[2] = { 0, 0 };
+boolean_T isRateRunning[3] = { 0, 0, 0 };
 
-boolean_T need2runFlags[2] = { 0, 0 };
+boolean_T need2runFlags[3] = { 0, 0, 0 };
 
 void rt_OneStep(void)
 {
-  boolean_T eventFlags[2];
+  boolean_T eventFlags[3];
+  int_T i;
 
   /* Check base rate for overrun */
   if (isRateRunning[0]++) {
@@ -51,39 +52,49 @@ void rt_OneStep(void)
   /* Get model outputs here */
   disableTimer0Interrupt();
   isRateRunning[0]--;
-  if (eventFlags[1]) {
-    if (need2runFlags[1]++) {
-      IsrOverrun = 1;
-      need2runFlags[1]--;              /* allow future iterations to succeed*/
-      return;
+  for (i = 1; i < 3; i++) {
+    if (eventFlags[i]) {
+      if (need2runFlags[i]++) {
+        IsrOverrun = 1;
+        need2runFlags[i]--;            /* allow future iterations to succeed*/
+        break;
+      }
     }
   }
 
-  if (need2runFlags[1]) {
-    if (isRateRunning[1]) {
+  for (i = 1; i < 3; i++) {
+    if (isRateRunning[i]) {
       /* Yield to higher priority*/
       return;
     }
 
-    isRateRunning[1]++;
-    enableTimer0Interrupt();
+    if (need2runFlags[i]) {
+      isRateRunning[i]++;
+      enableTimer0Interrupt();
 
-    /* Step the model for subrate "1" */
-    switch (1)
-    {
-     case 1 :
-      G6A_Einstiegsaufgabe_Informationstechnik_step1();
+      /* Step the model for subrate "i" */
+      switch (i)
+      {
+       case 1 :
+        G6A_Einstiegsaufgabe_Informationstechnik_step1();
 
-      /* Get model outputs here */
-      break;
+        /* Get model outputs here */
+        break;
 
-     default :
-      break;
+       case 2 :
+        G6A_Einstiegsaufgabe_Informationstechnik_step2();
+
+        /* Get model outputs here */
+        break;
+
+       default :
+        break;
+      }
+
+      disableTimer0Interrupt();
+      need2runFlags[i]--;
+      isRateRunning[i]--;
     }
-
-    disableTimer0Interrupt();
-    need2runFlags[1]--;
-    isRateRunning[1]--;
   }
 }
 

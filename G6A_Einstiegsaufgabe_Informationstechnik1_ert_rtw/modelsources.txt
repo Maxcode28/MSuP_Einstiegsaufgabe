@@ -1,2 +1,0 @@
-  G6A_Einstiegsaufgabe_Informationstechnik1.c
-
